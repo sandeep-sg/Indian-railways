@@ -1,0 +1,129 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+main {
+  padding: 0 50px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+header nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select {
+  padding: 10px;
+  width: 200px;
+  margin: 5px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e16309;
+}
+#result {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.2s;
+}
+.row-first,
+.row-second {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.row-third {
+  display: flex;
+}
+.row-third .class-type {
+  display: flex;
+  gap: 20px;
+}
+
+.row-third .class-type .box {
+  border: 1px solid rgb(255, 0, 128);
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 4px 8px #eee;
+  border: 1px solid #fff;
+}
+
+.train-info {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.station-info {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.time-info {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-style: italic;
+}

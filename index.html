@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="logo">IRCTC</div>
+          <ul>
+            <a href="./pnr_status.html"> <li>PNR STATUS</li></a>
+            <li>BOOK TICKET</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+          </ul>
+          <button>Login</button>
+        </nav>
+      </header>
+      <div class="container">
+        <h1>Train Search</h1>
+        <input
+          type="text"
+          id="departureStation"
+          placeholder="Enter departure station code"
+        />
+        <input
+          type="text"
+          id="arrivalStation"
+          placeholder="Enter arrival station code"
+        />
+        <input
+          type="date"
+          id="journeyDate"
+          placeholder="Select date of journey"
+        />
+        <select name="" id="quota">
+          <option value="GN" selected>GENERAL</option>
+          <option value="LD">LADIES</option>
+          <option value="HP">PERSON WITH DISABILITY</option>
+          <option value="tq">TATKAL</option>
+          <option value="PT">PREMIUM TATKAL</option>
+        </select>
+        <button id="searchButton">Search</button>
+      </div>
+      <div id="result"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
