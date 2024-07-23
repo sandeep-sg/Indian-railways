@@ -14,8 +14,7 @@ document.getElementById("search-btn").addEventListener("click", async () => {
 
   try {
     const response = await fetch(url, options);
-    const result = await response.json();
-    const data = result.data;
+    const data = await response.json();
     loader.style.display = "none";
     let tableContainer = document.createElement("div");
 
@@ -35,7 +34,7 @@ document.getElementById("search-btn").addEventListener("click", async () => {
             </thead>
             <tbody>
             <tr>
-            <td>${data.trainNumber}</td>
+             <td>${data.trainNumber}</td>
             <td>${data.trainName}</td>
             <td>${data.dateOfJourney}</td>
             <td>${data.boardingPoint}</td>
