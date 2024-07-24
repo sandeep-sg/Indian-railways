@@ -4,12 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-main {
+
+header {
   padding: 0 50px;
+  box-shadow: 0 0 5px #ccc;
 }
 header nav {
   display: flex;

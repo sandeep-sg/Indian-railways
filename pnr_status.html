@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="./pnr_status.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>PNR Status</h1>
-      <input type="text" id="pnr-input" placeholder="Enter PNR number" />
-      <button id="search-btn">Check PNR Status</button>
-    </div>
+    <header>
+      <nav>
+        <div class="logo">IRCTC</div>
+        <ul>
+          <a href="./pnr_status.html"> <li>PNR STATUS</li></a>
+          <li>BOOK TICKET</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+        <button>Login</button>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>PNR Status</h1>
+        <input type="text" id="pnr-input" placeholder="Enter PNR number" />
+        <button id="search-btn">Check PNR Status</button>
+      </div>
 
-    <div id="result"></div>
-    <div class="loader" id="loader"></div>
+      <div id="result"></div>
+      <div class="loader" id="loader"></div>
+    </main>
 
     <script src="./pnr_status.js"></script>
   </body>
